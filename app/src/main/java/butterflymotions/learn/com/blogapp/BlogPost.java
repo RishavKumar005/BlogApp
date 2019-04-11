@@ -4,6 +4,7 @@ package butterflymotions.learn.com.blogapp;
 import com.google.firebase.firestore.ServerTimestamp;
 
 import java.util.Date;
+import java.util.TooManyListenersException;
 
 public class BlogPost extends BlogPostId {
 
@@ -18,6 +19,8 @@ public class BlogPost extends BlogPostId {
         this.desc = desc;
         this.image_thumb = image_thumb;
         this.timestamp = timestamp;
+
+
     }
 
     public String getUser_id() {
