@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "224256303234",
+    "firebase_url": "https://blogapp-f905c.firebaseio.com",
+    "project_id": "blogapp-f905c",
+    "storage_bucket": "blogapp-f905c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224256303234:android:1d965884339fa9c8",
+        "android_client_info": {
+          "package_name": "butterflymotions.learn.com.blogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224256303234-a60rfc5e5iscki5pcdd47kuo0c9t4rbu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "butterflymotions.learn.com.blogapp",
+            "certificate_hash": "97ce3a5c5b3c83a8b395ca0832b07f4c250ab230"
+          }
+        },
+        {
+          "client_id": "224256303234-5bos8kp30ompm9iuea7olp8ne6lm9ebd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvoQ9ynwBqXhIH4eo-JhZilSybBJURupg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224256303234-5bos8kp30ompm9iuea7olp8ne6lm9ebd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
