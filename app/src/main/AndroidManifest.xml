@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="butterflymotions.learn.com.blogapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,8 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,18 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".SetupActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.SetupActivity" />
         <activity
-            android:name=".NewPostActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".CommentsActivity"></activity>
+            android:name=".activity.NewPostActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity android:name=".activity.CommentsActivity" />
     </application>
 
 </manifest>

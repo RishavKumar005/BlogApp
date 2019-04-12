@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -26,6 +26,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import butterflymotions.learn.com.blogapp.model.Comments;
+import butterflymotions.learn.com.blogapp.R;
+import butterflymotions.learn.com.blogapp.adapter.CommentsRecyclerAdapter;
 
 public class CommentsActivity extends AppCompatActivity {
     private Toolbar commentToolbar;

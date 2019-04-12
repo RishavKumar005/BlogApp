@@ -1,7 +1,6 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.activity;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
@@ -21,6 +20,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import butterflymotions.learn.com.blogapp.fragment.AccountFragment;
+import butterflymotions.learn.com.blogapp.fragment.HomeFragment;
+import butterflymotions.learn.com.blogapp.fragment.NotificationFragment;
+import butterflymotions.learn.com.blogapp.R;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar mainToolbar;

@@ -1,15 +1,13 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +15,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -32,6 +29,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import butterflymotions.learn.com.blogapp.model.BlogPost;
+import butterflymotions.learn.com.blogapp.activity.CommentsActivity;
+import butterflymotions.learn.com.blogapp.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapter.ViewHolder> {

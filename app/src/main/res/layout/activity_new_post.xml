@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewPostActivity">
+    tools:context=".activity.NewPostActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/new_post_toolbar"
         android:layout_width="match_parent"
@@ -13,14 +13,18 @@
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/new_post_image"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/_30sdp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new_post_toolbar"
         app:srcCompat="@drawable/post_placeholder" />
@@ -29,14 +33,15 @@
         android:id="@+id/new_post_desc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/post_desc_hint"
         android:inputType="textMultiLine"
         android:maxLength="125"
         android:padding="16dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new_post_image" />
@@ -45,8 +50,9 @@
         android:id="@+id/post_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
         android:padding="16dp"
@@ -65,8 +71,9 @@
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/new_post_image" />
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/post_btn"
+        app:layout_constraintStart_toStartOf="@+id/post_btn"
+        app:layout_constraintTop_toBottomOf="@+id/post_btn" />
 
 </android.support.constraint.ConstraintLayout>

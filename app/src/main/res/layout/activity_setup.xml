@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SetupActivity">
+    tools:context=".activity.SetupActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/setupToolbar"
         android:layout_width="match_parent"
@@ -30,9 +30,10 @@
         android:id="@+id/setup_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         android:ems="10"
         android:hint="@string/setup_name_hint_text"
         android:inputType="textPersonName"
@@ -46,8 +47,9 @@
         android:id="@+id/setup_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
         android:padding="15dp"
@@ -66,8 +68,9 @@
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setupToolbar" />
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/setup_btn"
+        app:layout_constraintStart_toStartOf="@+id/setup_btn"
+        app:layout_constraintTop_toBottomOf="@+id/setup_btn" />
 
 </android.support.constraint.ConstraintLayout>

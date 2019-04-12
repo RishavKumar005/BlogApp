@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -38,6 +38,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import butterflymotions.learn.com.blogapp.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 import id.zelory.compressor.Compressor;
 

@@ -1,24 +1,14 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.fragment;
 
 
-import android.content.Context;
-import android.graphics.Point;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.Display;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.PopupWindow;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -30,6 +20,10 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterflymotions.learn.com.blogapp.model.BlogPost;
+import butterflymotions.learn.com.blogapp.R;
+import butterflymotions.learn.com.blogapp.adapter.BlogRecyclerAdapter;
 
 
 /**

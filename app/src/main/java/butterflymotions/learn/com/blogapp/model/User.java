@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.model;
 
 public class User {
     public String image,name;

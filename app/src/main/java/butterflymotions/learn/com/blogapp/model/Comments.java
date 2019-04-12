@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.model;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
+
+import butterflymotions.learn.com.blogapp.model.Comments;
+import butterflymotions.learn.com.blogapp.R;
 
 public class CommentsRecyclerAdapter extends RecyclerView.Adapter<CommentsRecyclerAdapter.ViewHolder> {
 

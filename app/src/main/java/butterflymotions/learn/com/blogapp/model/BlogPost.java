@@ -1,12 +1,9 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.model;
 
-
-import com.google.firebase.firestore.ServerTimestamp;
 
 import java.util.Date;
-import java.util.TooManyListenersException;
 
-public class BlogPost extends BlogPostId {
+public class BlogPost extends butterflymotions.learn.com.blogapp.model.BlogPostId {
 
     public String user_id, image_url, desc, image_thumb;
     public Date timestamp;

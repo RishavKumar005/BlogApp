@@ -1,4 +1,4 @@
-package butterflymotions.learn.com.blogapp;
+package butterflymotions.learn.com.blogapp.activity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -34,9 +34,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 import java.util.UUID;
 
+import butterflymotions.learn.com.blogapp.R;
 import id.zelory.compressor.Compressor;
 
 public class NewPostActivity extends AppCompatActivity {
