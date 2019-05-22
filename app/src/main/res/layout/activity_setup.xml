@@ -51,7 +51,7 @@
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_30sdp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/color_orange"
         android:padding="15dp"
         android:text="@string/setup_btn_name_text"
         android:textAllCaps="false"

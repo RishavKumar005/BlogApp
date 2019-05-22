@@ -100,34 +100,55 @@
             android:layout_height="1dp"
             android:layout_below="@+id/rel3"
             android:background="#BDBDBD" />
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:onClick="onClick"
+            android:textColor="@color/likeBtnGray"
+            android:layout_alignParentEnd="true"
+            android:gravity="center|right"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Forgot Password"
+            android:layout_below="@+id/viewPassword"/>
 
-        <Button
-            android:id="@+id/login_btn"
+        <LinearLayout
+            android:id="@+id/llButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/viewPassword"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:background="@color/color_orange"
-            android:padding="@dimen/_10sdp"
-            android:text="@string/login_btn_text"
-            android:textAllCaps="false"
-            android:textColor="@color/color_white"
-            android:textSize="@dimen/_16sdp" />
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/tvForgotPass">
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_orange"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/login_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/login_reg_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rectangle_orange_border"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/login_reg_btn_text"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_16sdp" />
 
 
-        <Button
-            android:id="@+id/login_reg_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/login_btn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rectangle_orange_border"
-            android:padding="@dimen/_10sdp"
-            android:text="@string/login_reg_btn_text"
-            android:textAllCaps="false"
-            android:textSize="@dimen/_16sdp" />
+        </LinearLayout>
 
         <ProgressBar
             android:id="@+id/login_progress"
@@ -137,7 +158,7 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:indeterminate="true"
             android:visibility="invisible"
-            android:layout_below="@+id/login_reg_btn" />
+            android:layout_below="@+id/llButton" />
     </RelativeLayout>
 
 

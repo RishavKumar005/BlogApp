@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "butterflymotions.learn.com.blogapp"
+        applicationId "rishav.learn.com.blogapp"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
@@ -40,7 +40,6 @@ dependencies {
     implementation 'id.zelory:compressor:2.1.0'
 
     implementation 'com.android.support:cardview-v7:+'
-    //sdp dependency
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
 }

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:224256303234:android:1d965884339fa9c8",
         "android_client_info": {
-          "package_name": "butterflymotions.learn.com.blogapp"
+          "package_name": "rishav.learn.com.blogapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "224256303234-a60rfc5e5iscki5pcdd47kuo0c9t4rbu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "butterflymotions.learn.com.blogapp",
+            "package_name": "rishav.learn.com.blogapp",
             "certificate_hash": "97ce3a5c5b3c83a8b395ca0832b07f4c250ab230"
           }
         },

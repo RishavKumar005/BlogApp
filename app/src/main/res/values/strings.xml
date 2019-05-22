@@ -3,8 +3,8 @@
     <string name="pass_hint">Password...</string>
     <string name="email_hint">Your Email...</string>
     <string name="login_logo_desc">Logo Login Page</string>
-    <string name="login_btn_text">Login to account</string>
-    <string name="login_reg_btn_text">Need a new Account?</string>
+    <string name="login_btn_text">Login</string>
+    <string name="login_reg_btn_text">Signup</string>
     <string name="action_search_text">Search</string>
     <string name="action_setting_text">Account Settings</string>
     <string name="action_logout_text">Logout</string>
@@ -24,4 +24,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_email">Enter Your Email</string>
+    <string name="btn_reset_password">Password Reset</string>
+    <string name="btn_back">Cancel</string>
 </resources>

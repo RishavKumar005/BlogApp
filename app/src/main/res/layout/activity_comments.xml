@@ -48,8 +48,8 @@
         android:layout_height="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:padding="8dp"
-        android:src="@drawable/profile_placeholder"
+      android:padding="5dp"
+        android:src="@drawable/icon_rightarrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
