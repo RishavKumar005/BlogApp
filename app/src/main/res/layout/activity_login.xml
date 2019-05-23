@@ -130,6 +130,7 @@
                 android:background="@color/color_orange"
                 android:padding="@dimen/_10sdp"
                 android:text="@string/login_btn_text"
+                android:onClick="onClick"
                 android:textAllCaps="false"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/_16sdp" />

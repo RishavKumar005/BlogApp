@@ -42,55 +42,6 @@ public class LoginActivity extends AppCompatActivity {
         loginProgress = findViewById(R.id.login_progress);
         tvForgotPass = findViewById(R.id.tvForgotPass);
 
-
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String loginEmail = loginEmailText.getText().toString();
-                String loginPass = loginPassText.getText().toString();
-
-                if(TextUtils.isEmpty(loginEmail)){
-                    Toast.makeText(LoginActivity.this, "Please Enter Your Email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if(TextUtils.isEmpty(loginPass)){
-                    Toast.makeText(LoginActivity.this, "Please Enter Your Password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginPass)) {
-                    loginProgress.setVisibility(View.VISIBLE);
-
-                    mAuth.signInWithEmailAndPassword(loginEmail, loginPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-
-                            if (task.isSuccessful()) {
-
-                                sendToMain();
-
-                            } else {
-
-                                String errorMessage = task.getException().getMessage();
-                                Toast.makeText(LoginActivity.this, "Error : " + errorMessage, Toast.LENGTH_LONG).show();
-
-
-                            }
-
-                            loginProgress.setVisibility(View.INVISIBLE);
-
-                        }
-                    });
-
-                }
-
-
-            }
-        });
-
-
     }
 
     @Override
@@ -125,6 +76,51 @@ public class LoginActivity extends AppCompatActivity {
             case R.id.login_reg_btn:
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
                 break;
+
+            case R.id.login_btn:
+                getDataFromFirebase();
+                break;
+        }
+    }
+
+    private void getDataFromFirebase() {
+        String loginEmail = loginEmailText.getText().toString();
+        String loginPass = loginPassText.getText().toString();
+
+        if (TextUtils.isEmpty(loginEmail)) {
+            Toast.makeText(LoginActivity.this, "Please Enter Your Email", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(loginPass)) {
+            Toast.makeText(LoginActivity.this, "Please Enter Your Password", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginPass)) {
+            loginProgress.setVisibility(View.VISIBLE);
+
+
+            mAuth.signInWithEmailAndPassword(loginEmail, loginPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+
+                    if (task.isSuccessful()) {
+
+                        sendToMain();
+
+                    } else {
+
+                        String errorMessage = task.getException().getMessage();
+                        Toast.makeText(LoginActivity.this, "Error : " + errorMessage, Toast.LENGTH_LONG).show();
+
+
+                    }
+
+                    loginProgress.setVisibility(View.INVISIBLE);
+
+                }
+            });
         }
     }
 }
