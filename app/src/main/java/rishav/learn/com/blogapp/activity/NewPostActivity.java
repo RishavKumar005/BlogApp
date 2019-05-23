@@ -80,26 +80,13 @@ public class NewPostActivity extends AppCompatActivity {
         newPostBtn = findViewById(R.id.post_btn);
         newPostProgress = findViewById(R.id.new_post_progress);
 
-        newPostImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CropImage.activity()
-                        .setGuidelines(CropImageView.Guidelines.ON)
-                        .setMinCropResultSize(512, 512)
-                        .setAspectRatio(1, 1)
-                        .start(NewPostActivity.this);
-
-            }
-        });
-
         newPostBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 final String desc = newPostDesc.getText().toString();
 
-                if(!TextUtils.isEmpty(desc) && postImageUri != null){
+                if (!TextUtils.isEmpty(desc) && postImageUri != null) {
 
                     newPostProgress.setVisibility(View.VISIBLE);
 
@@ -132,7 +119,7 @@ public class NewPostActivity extends AppCompatActivity {
 
                             final String downloadUri = task.getResult().getDownloadUrl().toString();
 
-                            if(task.isSuccessful()){
+                            if (task.isSuccessful()) {
 
                                 File newThumbFile = new File(postImageUri.getPath());
                                 try {
@@ -171,7 +158,7 @@ public class NewPostActivity extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<DocumentReference> task) {
 
-                                                if(task.isSuccessful()){
+                                                if (task.isSuccessful()) {
 
                                                     Toast.makeText(NewPostActivity.this, "Post was added", Toast.LENGTH_LONG).show();
                                                     Intent mainIntent = new Intent(NewPostActivity.this, MainActivity.class);
@@ -237,4 +224,20 @@ public class NewPostActivity extends AppCompatActivity {
 
     }
 
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.new_post_image:
+                cropImage();
+                break;
+
+        }
+    }
+
+    private void cropImage() {
+        CropImage.activity()
+                .setGuidelines(CropImageView.Guidelines.ON)
+                .setMinCropResultSize(512, 512)
+                .setAspectRatio(1, 1)
+                .start(NewPostActivity.this);
+    }
 }
